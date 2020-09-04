@@ -31,10 +31,6 @@ body {
   margin: 0 10px;
 }
 
-.right {
-  text-align: center;
-}
-
 .icon__right {
   justify-content: center;
 }
