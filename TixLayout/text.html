@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1"
+    role="option" aria-describedby="slick-slide30" style="width: 940px;">
+    <div>
+      <div class="col-sm-3 col-xs-12 wrapFilm ng-scope" data-trailer="LdOM0x0XDMo" data-index="LdOM0x0XDMo"
+        ng-repeat="film in listShowingFilms" style="width: 25%; display: inline-block;">
+        <div class="film" data-slug="2123-tenet">
+          <a ng-click="goToFilmsDetail($event, film.film_slug, film.film_name, 'Now Showing Film')"
+            ui-sref="main.detail({slug: film.film_slug})" href="/phim/2123-tenet" tabindex="0">
+            <div class="filmThumbnail"
+              style="background-image: url('https://s3img.vcdn.vn/mobile/123phim/2019/12/tenet-15768107031731_215x318.jpg'), url('/app/assets/img/default-film.webp');">
+              <!-- <img src="app/assets/img/default-film.webp" actual-image="{{film.poster_thumb}}"> -->
+              <!-- ngIf: film.is_ss -->
+              <div class="hoverInfo showHover showingDetail" data-id="2123" data-slug="2123-tenet">
+                <!-- ngIf: film.media_id !== null && film.media_id != 0 --><button
+                  ng-if="film.media_id !== null &amp;&amp; film.media_id != 0" data-trailer="LdOM0x0XDMo"
+                  class="playTrailer ng-scope" ng-click="playTrailer($event)" type="button" tabindex="0"><img
+                    src="app/assets/img/icons/play-video.png"></button>
+                <!-- end ngIf: film.media_id !== null && film.media_id != 0 -->
+              </div>
+              <!-- ngIf: film.avg_point !== 0 --><span ng-if="film.avg_point !== 0" class="avgPoint ng-scope">
+                <p class="txtPoint ng-binding">7.5</p>
+                <p ng-bind-html="setStar(film.avg_point)" class="ng-binding"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="half" src="app/assets/img/icons/star1.2.png"></p>
+              </span><!-- end ngIf: film.avg_point !== 0 -->
+              <!-- ngIf: film.type_id>0 -->
+              <div class="film-type-label ng-scope" ng-if="film.type_id>0">
+                <img src="app/assets/img/icons/film_type_1.png" alt="Phim">
+              </div><!-- end ngIf: film.type_id>0 -->
+            </div>
+          </a>
+          <div class="info">
+            <div class="nameFilm hideHover"><span ng-class="{'ageType': true, 'ageType-general': film.film_age==0}"
+                class="ng-binding ageType">C16</span>Tenet - (C16)</div>
+            <div class="infoFilm hideHover">120 phút </div>
+            <div class="showHover">
+              <!-- ngIf: film.has_session === 1 --><a ng-if="film.has_session === 1"
+                ui-sref="main.detail({slug:film.film_slug})" class="buyNow showingDetail ng-scope" data-id="2123"
+                data-slug="2123-tenet" href="/phim/2123-tenet" tabindex="0">MUA VÉ</a>
+              <!-- end ngIf: film.has_session === 1 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-12 wrapFilm ng-scope" data-trailer="jU06ylSH-BY" data-index="jU06ylSH-BY"
+        ng-repeat="film in listShowingFilms" style="width: 25%; display: inline-block;">
+        <div class="film" data-slug="2447-lich-chieu-ac-quy-doi-dau">
+          <a ng-click="goToFilmsDetail($event, film.film_slug, film.film_name, 'Now Showing Film')"
+            ui-sref="main.detail({slug: film.film_slug})" href="/phim/2447-lich-chieu-ac-quy-doi-dau" tabindex="0">
+            <div class="filmThumbnail"
+              style="background-image: url('https://s3img.vcdn.vn/mobile/123phim/2020/08/ac-quy-doi-dau-deliver-us-from-evil-c16-15984134403610_215x318.png'), url('/app/assets/img/default-film.webp');">
+              <!-- <img src="app/assets/img/default-film.webp" actual-image="{{film.poster_thumb}}"> -->
+              <!-- ngIf: film.is_ss -->
+              <div class="hoverInfo showHover showingDetail" data-id="2447" data-slug="2447-lich-chieu-ac-quy-doi-dau">
+                <!-- ngIf: film.media_id !== null && film.media_id != 0 --><button
+                  ng-if="film.media_id !== null &amp;&amp; film.media_id != 0" data-trailer="jU06ylSH-BY"
+                  class="playTrailer ng-scope" ng-click="playTrailer($event)" type="button" tabindex="0"><img
+                    src="app/assets/img/icons/play-video.png"></button>
+                <!-- end ngIf: film.media_id !== null && film.media_id != 0 -->
+              </div>
+              <!-- ngIf: film.avg_point !== 0 --><span ng-if="film.avg_point !== 0" class="avgPoint ng-scope">
+                <p class="txtPoint ng-binding">9.1</p>
+                <p ng-bind-html="setStar(film.avg_point)" class="ng-binding"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="half" src="app/assets/img/icons/star1.2.png"></p>
+              </span><!-- end ngIf: film.avg_point !== 0 -->
+              <!-- ngIf: film.type_id>0 -->
+            </div>
+          </a>
+          <div class="info">
+            <div class="nameFilm hideHover"><span ng-class="{'ageType': true, 'ageType-general': film.film_age==0}"
+                class="ng-binding ageType">C16</span>Ác Quỷ Đối Đầu - Deliver Us From Evil - (C16)</div>
+            <div class="infoFilm hideHover">100 phút </div>
+            <div class="showHover">
+              <!-- ngIf: film.has_session === 1 --><a ng-if="film.has_session === 1"
+                ui-sref="main.detail({slug:film.film_slug})" class="buyNow showingDetail ng-scope" data-id="2447"
+                data-slug="2447-lich-chieu-ac-quy-doi-dau" href="/phim/2447-lich-chieu-ac-quy-doi-dau" tabindex="0">MUA
+                VÉ</a><!-- end ngIf: film.has_session === 1 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-12 wrapFilm ng-scope" data-trailer="q6JzdkBcYq4" data-index="q6JzdkBcYq4"
+        ng-repeat="film in listShowingFilms" style="width: 25%; display: inline-block;">
+        <div class="film" data-slug="1586-di-nhan-the-he-moi">
+          <a ng-click="goToFilmsDetail($event, film.film_slug, film.film_name, 'Now Showing Film')"
+            ui-sref="main.detail({slug: film.film_slug})" href="/phim/1586-di-nhan-the-he-moi" tabindex="0">
+            <div class="filmThumbnail"
+              style="background-image: url('https://s3img.vcdn.vn/mobile/123phim/2020/08/di-nhan-the-he-moi-the-new-mutants-15985206098391_215x318.jpg'), url('/app/assets/img/default-film.webp');">
+              <!-- <img src="app/assets/img/default-film.webp" actual-image="{{film.poster_thumb}}"> -->
+              <!-- ngIf: film.is_ss -->
+              <div class="hoverInfo showHover showingDetail" data-id="1586" data-slug="1586-di-nhan-the-he-moi">
+                <!-- ngIf: film.media_id !== null && film.media_id != 0 --><button
+                  ng-if="film.media_id !== null &amp;&amp; film.media_id != 0" data-trailer="q6JzdkBcYq4"
+                  class="playTrailer ng-scope" ng-click="playTrailer($event)" type="button" tabindex="0"><img
+                    src="app/assets/img/icons/play-video.png"></button>
+                <!-- end ngIf: film.media_id !== null && film.media_id != 0 -->
+              </div>
+              <!-- ngIf: film.avg_point !== 0 --><span ng-if="film.avg_point !== 0" class="avgPoint ng-scope">
+                <p class="txtPoint ng-binding">6.7</p>
+                <p ng-bind-html="setStar(film.avg_point)" class="ng-binding"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="half" src="app/assets/img/icons/star1.2.png"></p>
+              </span><!-- end ngIf: film.avg_point !== 0 -->
+              <!-- ngIf: film.type_id>0 -->
+            </div>
+          </a>
+          <div class="info">
+            <div class="nameFilm hideHover"><span ng-class="{'ageType': true, 'ageType-general': film.film_age==0}"
+                class="ng-binding ageType">C16</span>Dị Nhân Thế Hệ Mới - The New Mutants - (C16)</div>
+            <div class="infoFilm hideHover">100 phút - 7 IMDb</div>
+            <div class="showHover">
+              <!-- ngIf: film.has_session === 1 --><a ng-if="film.has_session === 1"
+                ui-sref="main.detail({slug:film.film_slug})" class="buyNow showingDetail ng-scope" data-id="1586"
+                data-slug="1586-di-nhan-the-he-moi" href="/phim/1586-di-nhan-the-he-moi" tabindex="0">MUA VÉ</a>
+              <!-- end ngIf: film.has_session === 1 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-12 wrapFilm ng-scope" data-trailer="QfctZceL6mw" data-index="QfctZceL6mw"
+        ng-repeat="film in listShowingFilms" style="width: 25%; display: inline-block;">
+        <div class="film" data-slug="2462-lich-chieu-break-the-silence">
+          <a ng-click="goToFilmsDetail($event, film.film_slug, film.film_name, 'Now Showing Film')"
+            ui-sref="main.detail({slug: film.film_slug})" href="/phim/2462-lich-chieu-break-the-silence" tabindex="0">
+            <div class="filmThumbnail"
+              style="background-image: url('https://s3img.vcdn.vn/mobile/123phim/2020/09/break-the-silence-the-movie-15989336085736_215x318.png'), url('/app/assets/img/default-film.webp');">
+              <!-- <img src="app/assets/img/default-film.webp" actual-image="{{film.poster_thumb}}"> -->
+              <!-- ngIf: film.is_ss --><span class="sneakshow ng-scope" ng-if="film.is_ss">Suất Chiếu Sớm</span>
+              <!-- end ngIf: film.is_ss -->
+              <div class="hoverInfo showHover showingDetail" data-id="2462"
+                data-slug="2462-lich-chieu-break-the-silence">
+                <!-- ngIf: film.media_id !== null && film.media_id != 0 --><button
+                  ng-if="film.media_id !== null &amp;&amp; film.media_id != 0" data-trailer="QfctZceL6mw"
+                  class="playTrailer ng-scope" ng-click="playTrailer($event)" type="button" tabindex="0"><img
+                    src="app/assets/img/icons/play-video.png"></button>
+                <!-- end ngIf: film.media_id !== null && film.media_id != 0 -->
+              </div>
+              <!-- ngIf: film.avg_point !== 0 --><span ng-if="film.avg_point !== 0" class="avgPoint ng-scope">
+                <p class="txtPoint ng-binding">6</p>
+                <p ng-bind-html="setStar(film.avg_point)" class="ng-binding"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="smallStar" src="app/assets/img/icons/star1.png">
+                </p>
+              </span><!-- end ngIf: film.avg_point !== 0 -->
+              <!-- ngIf: film.type_id>0 -->
+            </div>
+          </a>
+          <div class="info">
+            <div class="nameFilm hideHover"><span ng-class="{'ageType': true, 'ageType-general': film.film_age==0}"
+                class="ng-binding ageType ageType-general">P</span>Tâm Tư Cất Lời - Break The Silence: The Movie - (P)
+            </div>
+            <div class="infoFilm hideHover">0 phút </div>
+            <div class="showHover">
+              <!-- ngIf: film.has_session === 1 --><a ng-if="film.has_session === 1"
+                ui-sref="main.detail({slug:film.film_slug})" class="buyNow showingDetail ng-scope" data-id="2462"
+                data-slug="2462-lich-chieu-break-the-silence" href="/phim/2462-lich-chieu-break-the-silence"
+                tabindex="0">MUA VÉ</a><!-- end ngIf: film.has_session === 1 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="col-sm-3 col-xs-12 wrapFilm ng-scope" data-trailer="L3wT7R96l3g" data-index="L3wT7R96l3g"
+        ng-repeat="film in listShowingFilms" style="width: 25%; display: inline-block;">
+        <div class="film" data-slug="2382-lich-chieu-antebellum">
+          <a ng-click="goToFilmsDetail($event, film.film_slug, film.film_name, 'Now Showing Film')"
+            ui-sref="main.detail({slug: film.film_slug})" href="/phim/2382-lich-chieu-antebellum" tabindex="0">
+            <div class="filmThumbnail"
+              style="background-image: url('https://s3img.vcdn.vn/mobile/123phim/2020/08/antebellum-15972923087974_215x318.png'), url('/app/assets/img/default-film.webp');">
+              <!-- <img src="app/assets/img/default-film.webp" actual-image="{{film.poster_thumb}}"> -->
+              <!-- ngIf: film.is_ss -->
+              <div class="hoverInfo showHover showingDetail" data-id="2382" data-slug="2382-lich-chieu-antebellum">
+                <!-- ngIf: film.media_id !== null && film.media_id != 0 --><button
+                  ng-if="film.media_id !== null &amp;&amp; film.media_id != 0" data-trailer="L3wT7R96l3g"
+                  class="playTrailer ng-scope" ng-click="playTrailer($event)" type="button" tabindex="0"><img
+                    src="app/assets/img/icons/play-video.png"></button>
+                <!-- end ngIf: film.media_id !== null && film.media_id != 0 -->
+              </div>
+              <!-- ngIf: film.avg_point !== 0 --><span ng-if="film.avg_point !== 0" class="avgPoint ng-scope">
+                <p class="txtPoint ng-binding">7.4</p>
+                <p ng-bind-html="setStar(film.avg_point)" class="ng-binding"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="half" src="app/assets/img/icons/star1.2.png"></p>
+              </span><!-- end ngIf: film.avg_point !== 0 -->
+              <!-- ngIf: film.type_id>0 -->
+              <div class="film-type-label ng-scope" ng-if="film.type_id>0">
+                <img src="app/assets/img/icons/film_type_3.png" alt="Phim">
+              </div><!-- end ngIf: film.type_id>0 -->
+            </div>
+          </a>
+          <div class="info">
+            <div class="nameFilm hideHover"><span ng-class="{'ageType': true, 'ageType-general': film.film_age==0}"
+                class="ng-binding ageType">C18</span>Antebellum: Bẫy Thực Tại Kinh Hoàng - (C18)</div>
+            <div class="infoFilm hideHover">100 phút </div>
+            <div class="showHover">
+              <!-- ngIf: film.has_session === 1 --><a ng-if="film.has_session === 1"
+                ui-sref="main.detail({slug:film.film_slug})" class="buyNow showingDetail ng-scope" data-id="2382"
+                data-slug="2382-lich-chieu-antebellum" href="/phim/2382-lich-chieu-antebellum" tabindex="0">MUA VÉ</a>
+              <!-- end ngIf: film.has_session === 1 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-12 wrapFilm ng-scope" data-trailer="b2x3M7UPKhU" data-index="b2x3M7UPKhU"
+        ng-repeat="film in listShowingFilms" style="width: 25%; display: inline-block;">
+        <div class="film" data-slug="2459-lich-chieu-dau-gau-bac-cuc">
+          <a ng-click="goToFilmsDetail($event, film.film_slug, film.film_name, 'Now Showing Film')"
+            ui-sref="main.detail({slug: film.film_slug})" href="/phim/2459-lich-chieu-dau-gau-bac-cuc" tabindex="0">
+            <div class="filmThumbnail"
+              style="background-image: url('https://s3img.vcdn.vn/mobile/123phim/2020/08/dau-gau-bac-cuc-ky-nghi-vui-nhon-norm-of-the-north-family-vacation-p-15983410108242_215x318.png'), url('/app/assets/img/default-film.webp');">
+              <!-- <img src="app/assets/img/default-film.webp" actual-image="{{film.poster_thumb}}"> -->
+              <!-- ngIf: film.is_ss -->
+              <div class="hoverInfo showHover showingDetail" data-id="2459" data-slug="2459-lich-chieu-dau-gau-bac-cuc">
+                <!-- ngIf: film.media_id !== null && film.media_id != 0 --><button
+                  ng-if="film.media_id !== null &amp;&amp; film.media_id != 0" data-trailer="b2x3M7UPKhU"
+                  class="playTrailer ng-scope" ng-click="playTrailer($event)" type="button" tabindex="0"><img
+                    src="app/assets/img/icons/play-video.png"></button>
+                <!-- end ngIf: film.media_id !== null && film.media_id != 0 -->
+              </div>
+              <!-- ngIf: film.avg_point !== 0 --><span ng-if="film.avg_point !== 0" class="avgPoint ng-scope">
+                <p class="txtPoint ng-binding">8</p>
+                <p ng-bind-html="setStar(film.avg_point)" class="ng-binding"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="smallStar" src="app/assets/img/icons/star1.png">
+                </p>
+              </span><!-- end ngIf: film.avg_point !== 0 -->
+              <!-- ngIf: film.type_id>0 -->
+            </div>
+          </a>
+          <div class="info">
+            <div class="nameFilm hideHover"><span ng-class="{'ageType': true, 'ageType-general': film.film_age==0}"
+                class="ng-binding ageType ageType-general">P</span>Đầu Gấu Bắc Cực: Kỳ Nghỉ Vui Nhộn - Norm of the
+              North: Family Vacation - (P)</div>
+            <div class="infoFilm hideHover">90 phút </div>
+            <div class="showHover">
+              <!-- ngIf: film.has_session === 1 --><a ng-if="film.has_session === 1"
+                ui-sref="main.detail({slug:film.film_slug})" class="buyNow showingDetail ng-scope" data-id="2459"
+                data-slug="2459-lich-chieu-dau-gau-bac-cuc" href="/phim/2459-lich-chieu-dau-gau-bac-cuc"
+                tabindex="0">MUA VÉ</a><!-- end ngIf: film.has_session === 1 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-12 wrapFilm ng-scope" data-trailer="XKod7ydEhd4" data-index="XKod7ydEhd4"
+        ng-repeat="film in listShowingFilms" style="width: 25%; display: inline-block;">
+        <div class="film" data-slug="2457-lich-chieu-hoc-vien-quai-vat-du-hoc-sinh">
+          <a ng-click="goToFilmsDetail($event, film.film_slug, film.film_name, 'Now Showing Film')"
+            ui-sref="main.detail({slug: film.film_slug})" href="/phim/2457-lich-chieu-hoc-vien-quai-vat-du-hoc-sinh"
+            tabindex="0">
+            <div class="filmThumbnail"
+              style="background-image: url('https://s3img.vcdn.vn/mobile/123phim/2020/08/hoc-vien-quai-vat-du-hoc-sinh-cranston-academy-monster-zone-p-15979107579568_215x318.png'), url('/app/assets/img/default-film.webp');">
+              <!-- <img src="app/assets/img/default-film.webp" actual-image="{{film.poster_thumb}}"> -->
+              <!-- ngIf: film.is_ss -->
+              <div class="hoverInfo showHover showingDetail" data-id="2457"
+                data-slug="2457-lich-chieu-hoc-vien-quai-vat-du-hoc-sinh">
+                <!-- ngIf: film.media_id !== null && film.media_id != 0 --><button
+                  ng-if="film.media_id !== null &amp;&amp; film.media_id != 0" data-trailer="XKod7ydEhd4"
+                  class="playTrailer ng-scope" ng-click="playTrailer($event)" type="button" tabindex="0"><img
+                    src="app/assets/img/icons/play-video.png"></button>
+                <!-- end ngIf: film.media_id !== null && film.media_id != 0 -->
+              </div>
+              <!-- ngIf: film.avg_point !== 0 --><span ng-if="film.avg_point !== 0" class="avgPoint ng-scope">
+                <p class="txtPoint ng-binding">5.9</p>
+                <p ng-bind-html="setStar(film.avg_point)" class="ng-binding"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="half" src="app/assets/img/icons/star1.2.png"></p>
+              </span><!-- end ngIf: film.avg_point !== 0 -->
+              <!-- ngIf: film.type_id>0 -->
+            </div>
+          </a>
+          <div class="info">
+            <div class="nameFilm hideHover"><span ng-class="{'ageType': true, 'ageType-general': film.film_age==0}"
+                class="ng-binding ageType ageType-general">P</span>Học Viện Quái Vật: Du Học Sinh - Cranston Academy:
+              Monster Zone - (P)</div>
+            <div class="infoFilm hideHover">80 phút </div>
+            <div class="showHover">
+              <!-- ngIf: film.has_session === 1 --><a ng-if="film.has_session === 1"
+                ui-sref="main.detail({slug:film.film_slug})" class="buyNow showingDetail ng-scope" data-id="2457"
+                data-slug="2457-lich-chieu-hoc-vien-quai-vat-du-hoc-sinh"
+                href="/phim/2457-lich-chieu-hoc-vien-quai-vat-du-hoc-sinh" tabindex="0">MUA VÉ</a>
+              <!-- end ngIf: film.has_session === 1 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-12 wrapFilm ng-scope" data-trailer="Tbhkk9Pr6Kg" data-index="Tbhkk9Pr6Kg"
+        ng-repeat="film in listShowingFilms" style="width: 25%; display: inline-block;">
+        <div class="film" data-slug="2451-lich-chieu-ham-quy">
+          <a ng-click="goToFilmsDetail($event, film.film_slug, film.film_name, 'Now Showing Film')"
+            ui-sref="main.detail({slug: film.film_slug})" href="/phim/2451-lich-chieu-ham-quy" tabindex="0">
+            <div class="filmThumbnail"
+              style="background-image: url('https://s3img.vcdn.vn/mobile/123phim/2020/08/ham-quy-behind-you-c18-15976394035712_215x318.jpg'), url('/app/assets/img/default-film.webp');">
+              <!-- <img src="app/assets/img/default-film.webp" actual-image="{{film.poster_thumb}}"> -->
+              <!-- ngIf: film.is_ss -->
+              <div class="hoverInfo showHover showingDetail" data-id="2451" data-slug="2451-lich-chieu-ham-quy">
+                <!-- ngIf: film.media_id !== null && film.media_id != 0 --><button
+                  ng-if="film.media_id !== null &amp;&amp; film.media_id != 0" data-trailer="Tbhkk9Pr6Kg"
+                  class="playTrailer ng-scope" ng-click="playTrailer($event)" type="button" tabindex="0"><img
+                    src="app/assets/img/icons/play-video.png"></button>
+                <!-- end ngIf: film.media_id !== null && film.media_id != 0 -->
+              </div>
+              <!-- ngIf: film.avg_point !== 0 --><span ng-if="film.avg_point !== 0" class="avgPoint ng-scope">
+                <p class="txtPoint ng-binding">5.9</p>
+                <p ng-bind-html="setStar(film.avg_point)" class="ng-binding"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="smallStar"
+                    src="app/assets/img/icons/star1.png"><img class="half" src="app/assets/img/icons/star1.2.png"></p>
+              </span><!-- end ngIf: film.avg_point !== 0 -->
+              <!-- ngIf: film.type_id>0 -->
+            </div>
+          </a>
+          <div class="info">
+            <div class="nameFilm hideHover"><span ng-class="{'ageType': true, 'ageType-general': film.film_age==0}"
+                class="ng-binding ageType">C18</span>Hầm Quỷ - Behind You - (C18)</div>
+            <div class="infoFilm hideHover">86 phút </div>
+            <div class="showHover">
+              <!-- ngIf: film.has_session === 1 --><a ng-if="film.has_session === 1"
+                ui-sref="main.detail({slug:film.film_slug})" class="buyNow showingDetail ng-scope" data-id="2451"
+                data-slug="2451-lich-chieu-ham-quy" href="/phim/2451-lich-chieu-ham-quy" tabindex="0">MUA VÉ</a>
+              <!-- end ngIf: film.has_session === 1 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

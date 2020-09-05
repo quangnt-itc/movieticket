@@ -5,10 +5,14 @@
 @import './helpers/extend';
 @import './helpers/mixin';
 
+@import './vendors/slick';
+
 @import './components/button';
 @import './components/loading';
+@import './components/movie__slider';
 
 @import './layouts/header';
+@import './layouts/banner';
 @import './layouts/movie';
 @import './layouts/cinema';
 @import './layouts/news';

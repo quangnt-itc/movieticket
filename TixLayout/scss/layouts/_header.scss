@@ -1,0 +1,12 @@
+// header
+header.header#header {
+  z-index: 10;
+  box-shadow: $box-shadow;
+}
+header.header#header .navbar.navbar-expand-md.navbar-dark.bg-dark {
+  background-color:rgba(0, 0, 0, 0.800) !important;
+} 
+.carousel-indicators {
+  bottom: 10%;
+}
+// header
